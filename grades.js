@@ -12,16 +12,16 @@ for(i=0; i<scores.length; i++){
 		console.log(scoreF)
 		scores = scoreF.push("F");
 	}
-		else if (scores[i] >= 61 && scores[i] <= 70){
+		else if (scores[i] <= 70 && scores[i] >= 61){
 			scoreD.push("D");
 		}
-		else if (scores[i] >= 71 && scores[i] <= 80){
+		else if (scores[i] <= 80 && scores[i] >= 71){
 			scoreC.push("C");
 		}
-		else if (scores[i] >= 81 && scores[i] <= 90){
+		else if (scores[i] <= 90 && scores[i] >= 81){
 			scoreB.push("B");
-	}
-	else (scores[i] >= 91) 
+		}
+		else (scores[i] > 91) 
 			scoreA.push("A");		
 }
 var uno = "How many As were there-  "
